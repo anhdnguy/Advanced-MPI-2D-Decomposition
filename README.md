@@ -29,3 +29,8 @@ Since the outer ranks such as rank 0, 1, 4, and 5 have one less column of interi
 
 Since each rank relies on the data of the other ranks, we would need to perform the exchanges of rows and columns between them. If current rank is even, it will send the last row of its grid to the rank below which is only 1 rank higher. For example, if the current rank is 0, it will need to pass row 4 to rank 1. For the receivers, they will copy the received row into the first row. On the other hand, if the rank is odd, it will send the second row to the rank above. Similarly, the rank needs to send data to its left or right neighbors. The two most left ranks will only send data to the right and receive data from the right. On the opposite, the two far right ranks will only send and receive data from the left. The inner ranks will send and receive data from both sides. The modified version of the mesh and how the exchanges of rows and columns between the ranks are shown as below.
 
+![Send_Receive](pictures/Row_Col.png)
+
+For the result, we will consider a bigger mesh with $18 \times 24$ of size with $8$ processors. The contour plot on the left is the initial data and the one on the right is the result.
+
+![Result](pictures/Git_Result.png)
