@@ -1,6 +1,6 @@
 # Advanced-MPI-2D-Decomposition
 
-The purpose of this project is to improve the simple Jacobi iteration method to approximate the solution to a linear system of equations. The basic Jacobi iteration solves the Laplace equation in two dimensions with finite differences. The parallel computing method such as MPI was used in a more complex setup to create more robust algorithms.
+The purpose of this project is to improve the simple Jacobi iteration method to approximate the solution to a linear system of equations. The basic Jacobi iteration solves the Laplace equation in two dimensions with finite differences. The parallel computing method such as MPI was used in a more complex setup to create a more robust algorithm.
 
 A simple Jacobi iteration can be used to approximate the solution to a linear system of equations. In this project, the iteration is used to solve the Laplace equation in two dimensions with finite differences. The numerical computation can be showed with the sudo code below.
 
